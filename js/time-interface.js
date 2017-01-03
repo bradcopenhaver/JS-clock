@@ -1,3 +1,6 @@
 $(document).ready(function() {
-  $('#time').text(moment().format('LT'));
+  setInterval(function(){
+    document.getElementById("time").innerHTML = moment().format('LT');
+  }, 1000);
 });
+//

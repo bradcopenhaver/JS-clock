@@ -11,7 +11,7 @@ Alarm.prototype.convertTime = function () {
   var hour = parseInt(this.time.slice(0,2));
   console.log(this.time);
   var minutes = this.time.slice(3,5);
-  var hours;
+  var hours = hour;
   var ampm;
   if (hour > 12) {
   hours = ((hour + 11) % 12) + 1;
